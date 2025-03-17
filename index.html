@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学校历史时间轴</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.3 });
+    
+        document.querySelectorAll('.chapter').forEach(chapter => {
+            observer.observe(chapter);
+        });
+    });
+</script>
+<body>
+
+    <div class="parallax-bg"></div>
+
+    <section class="chapter" data-color=" #F0F8FF;">
+        <div class="banner">
+            <img src="images/z001.jpg" alt="学校横幅">
+        </div>
+    </section>
+    
+
+    <section class="chapter" data-color=" #a3d8f5;">
+        <div class="chapter-header">
+            <h2 class="chapter-title">
+                <span class="chapter-number">第一章</span>
+                <span class="chapter-text">清末民初 榆树县立中学的成立</span>
+            </h2>
+            <div class="chapter-divider"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>1914年</h2>
+                    <p>五月三十日，榆树县立中学校建校，此即榆树一中前身。最初只招1个班，数月后并入道立中学。最终在1925年8月重建榆树县立中学</p>
+                </div>
+                <div class="timeline-image">
+                    <img src="images/s999.jpg" alt="校门">
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-image">
+                    <img src="images/s995.jpg" alt="照片">
+                </div>
+                <div class="timeline-content">
+                    <h2>教育计划，课程设置</h2>
+                    <p>学校建校伊始实行学分制，课程分为必修和选修：必修课有跟民、国文、英语、数学、历史等，选修课有俄语、珠算、科学概况、图画、乐歌等。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chapter" data-color=" #e596b0;">
+        <div class="chapter-header">
+            <h2 class="chapter-title">
+                <span class="chapter-number">第二章</span>
+                <span class="chapter-text">伪满时期 省立榆树国高的建立</span>
+            </h2>
+            <div class="chapter-divider"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>1931年</h2>
+                    <p>日本帝国主义发动了骇人听闻的“九·一八”事变，吉林，长春相继沦陷。伪满时期教育的整备与管理，是奴化教育的顶峰，为吉林省立高等学校的产生奠定了基础。</p>
+                </div>
+                <div class="timeline-image">
+                    <img src="images/s998.jpg" alt="合影">
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <!-- <div class="timeline-image">
+                    <img src="images/s995.jpg" alt="照片">
+                </div> -->
+                <div class="timeline-content">
+                    <h2>1932-1934年</h2>
+                    <p>由于战乱和社会动荡的影响，仅有的一处县立初级中学也因经费不足，在教育整备之初停办。</p>
+                    <p>1933年，学校奉令恢复，但因原有校舍被军队占用，暂借县立模范小学（现培英小学）内开办。中学内附设日语1个班，学生60人，因人才急需，卒业期限缩至6个月。</p>
+                    <p>1934年，迁回旧址，次年3月，榆树县立中学改名榆树县立初级中学校，于廷芹任校长。</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>1938年</h2>
+                    <p>1月，榆树县立初级中学改归省立，更名为吉林省立榆树国民高等学校，简称“榆树国高”，杜天建任校长，学制改为四年。3月，原附设日语班停办。</p>
+                </div>
+                <div class="timeline-image">
+                    <img src="images/s997.jpg" alt="图书馆扩建">
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>日伪统治榆树国高时的奴化教育</h2>
+                    <p>在长达14年的伪满时期，日伪把持着榆树的教育，推行奴化教育。</p>
+                    <p>伪满洲国发号命令，废除原三民主义教科书，实行“王道乐土”之下的教育。包括：将三民主义改为王道主义、三三学制改为初高中合一的四年一贯制等方针规定。</p>
+                    <p>日本侵略者首先在精神上奴役中国人民，学校政治思想教育主要内容是效忠日本天皇（裕仁）和伪满皇帝（溥仪）；将“天照大神”说成是伪满洲国的建国元神；废除历史和地理，与日语一起纳入国语课程等等。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chapter" data-color=" #e596b0;">
+        <div class="chapter-header">
+            <h2 class="chapter-title">
+                <span class="chapter-number">第三章</span>
+                <span class="chapter-text">革命摇篮 吉北联合中学的创建</span>
+            </h2>
+            <div class="chapter-divider"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>1945年</h2>
+                    <p>抗日战争胜利，结束了日伪统治教育。同年12月27日，榆树解放。1946年1月成立了民主政府。</p>
+                    <p>之后对学校进行调整，将榆树国高和榆树女高分别改为榆树县两级中学校和榆树县女子师范学校。</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-image">
+                    <img src="images/s994.jpg" alt="照片">
+                </div>
+                <div class="timeline-content">
+                    <h2>1947年</h2>
+                    <p>根据吉北地委和吉北专员公署决定，成立了吉林省立吉北联合中学校，简称吉北联中，委托榆树县委代管。</p>
+                    <p>（左图为吉北联中学生证）</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-image">
+                    <img src="images/s993.jpg" alt="照片">
+                </div>
+                <div class="timeline-content">
+                    <h2>学校概括</h2>
+                    <p>吉北联合中学是吉北地区的一所新型学校，打破了男女分校的建制。在榆树民主政府的领导下，学校坚持教育面向工农大众的方针，培养有政治觉悟，有文化素质的革命人才。</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>校长李又然</h2>
+                    <p>李又然（1906-1984），又名李则蓝，生于上海，原籍浙江慈溪人。1926年先后就读于上海南洋高商英文专修班和上海群治大学法律系。</p>
+                    <P>参加法国共产党所属中国支部，师从著名作家罗曼·罗兰。后从事世界语研究。著有散文集《国际家书》《伟大的安慰者》《李又然散文集》；译有纪实文等诗选《聂鲁达诗选》《波特夫诗选》，剧本《任性的玛丽亚纳》。</P>
+                </div>
+                <div class="timeline-image">
+                    <img src="images/s990.jpg" alt="合影">
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-image">
+                    <img src="images/s981.jpg" alt="照片">
+                </div>
+                <div class="timeline-content">
+                    <h2>爱国主义教育</h2>
+                    <p>在伪满洲国的残酷统治下，我东北同胞深受奴役之苦，饱偿奴化之痛。在学校中开展爱国主义教育，就是要使师生们认识到日寇侵我国土、掠我资源、毁我经济、亡国灭种，是中华民族不共戴天的敌人。在中华民族生死关头，是中国共产党团结各个阶层，建立抗日民族统一战线，抵抗日本侵略，最终迫使其无条件投降。</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h2>阶级观点教育</h2>
+                    <p>人类社会是由阶级组成的，看问题要有阶级观点，要进行阶级分析，分清谁是我们的敌人，谁是我们的朋友，这是每个革命者必须解决的首要问题。</p>
+                </div>
+                <div class="timeline-image">
+                    <img src="images/s983.jpg" alt="合影">
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-image">
+                    <img src="images/s985.jpg" alt="照片">
+                </div>
+                <div class="timeline-content">
+                    <h2>人生观教育</h2>
+                    <p>人的一切行动都是以人生观作为总的指导的，剥削阶级的人生现是唯利是图，信奉的是“人不为己，天诛地灭，人为财死，鸟为食亡”。工人阶级的人生观是大公无私，消灭一切剥削人、压迫人的制度，为解放全人类而奋斗，实现世界大同，是他们的最高理想。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

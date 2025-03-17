@@ -1,0 +1,22 @@
+[
+    {
+        "year": "1990年",
+        "description": "学校成立啦啦啦啦啦啦",
+        "image": "images/1990.jpg"
+    },
+    {
+        "year": "2000年",
+        "description": "新教学楼建成",
+        "image": "images/2000.jpg"
+    },
+    {
+        "year": "2010年",
+        "description": "图书馆扩建",
+        "image": "images/2010.jpg"
+    },
+    {
+        "year": "2020年",
+        "description": "校园网络升级",
+        "image": "images/2020.jpg"
+    }
+]
